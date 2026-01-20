@@ -8,6 +8,17 @@
     "cli": "public",
     "platform": "public"
   },
+  {                                                                   
+    "blockedVersions": {                                              
+      "cli": [],                                               
+      "platform": []                                                  
+    },                                                                
+    "announcement": {                                                 
+      "enabled": true,                                                
+      "message": "Scheduled maintenance on Jan 25th at 2PM UTC",      
+      "type": "warning"                                               
+    }                                                                 
+  }       
   "updateUrls": {
     "cli": "https://www.npmjs.com/package/@swishfoundry/qew",
     "platform": {
