@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "minCliVersion": "1.0.5",
+  "minPlatformVersion": "1.11.0",
+  "latestCliVersion": "1.0.5",
+  "latestPlatformVersion": "1.11.0",
+  "access": {
+    "cli": "public",
+    "platform": "public"
+  },
+  "updateUrls": {
+    "cli": "https://www.npmjs.com/package/@swishfoundry/qew",
+    "platform": {
+      "ios": "https://apps.apple.com/app/qew",
+      "android": "https://play.google.com/store/apps/details?id=com.swish.qew",
+      "web": "https://qew.swishfoundry.com"
+    }
+  },
+  "messages": {
+    "cliUpdateRequired": "Your CLI is outdated. Please update to continue.",
+    "platformUpdateRequired": "Your app needs to be updated."
+  },
+  "maintenance": {
+    "enabled": false,
+    "message": "Service is under maintenance."
+  }
+}
