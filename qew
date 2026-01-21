@@ -6,7 +6,10 @@
   "latestPlatformVersion": "1.11.0",
   "access": {
     "cli": "public",
-    "platform": "public"
+    "platform": "public",
+    "claude": "public",
+    "codex": "private",
+    "gemini": "disable"
   },
   {                                                                   
     "blockedVersions": {                                              
