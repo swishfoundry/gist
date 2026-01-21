@@ -43,7 +43,7 @@
   },
   "blockedVersions": {
     "cli": [],
-    "platform": []
+    "platform": [1.11.0]
   },
   "announcement": {
     "enabled": true,
