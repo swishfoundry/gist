@@ -4,19 +4,18 @@
   "minPlatformVersion": "1.11.0",
   "latestCliVersion": "1.0.5",
   "latestPlatformVersion": "1.11.0",
-  "access": {
-    "cli": "public",
-    "platform": "public",
-    "claude": "public",
-    "codex": "private",
-    "gemini": "disable"
-  },
-  {                                                                   
+  "access": {                                                       
+      "cli": "public",                                                
+      "platform": "public",                                           
+      "claude": "public",                                             
+      "codex": "private",                                             
+      "gemini": "disable"                                             
+    },                                                                
     "blockedVersions": {                                              
-      "cli": [],                                               
+      "cli": [],                                                      
       "platform": []                                                  
     },                                                                
-    "announcement": {                                                 
+    "announcement": {                                                  
       "enabled": true,                                                
       "message": "Scheduled maintenance on Jan 25th at 2PM UTC",      
       "type": "warning"                                               
