@@ -4,6 +4,10 @@
   "minPlatformVersion": "1.11.0",
   "latestCliVersion": "1.0.5",
   "latestPlatformVersion": "1.11.0",
+  "access": {
+    "cli": "public",
+    "platform": "public"
+  },
   "providers": {
     "claude": {
       "name": "Claude",
