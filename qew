@@ -63,7 +63,7 @@
     "platformUpdateRequired": "Your app needs to be updated."
   },
   "maintenance": {
-    "enabled": false,
+    "enabled": true,
     "message": "Service is under maintenance."
   }
 }
