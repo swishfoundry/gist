@@ -16,7 +16,7 @@
       "models": [
         { "id": "claude-opus-4-5-20251101", "name": "Opus", "description": "Most capable model", "isDefault": true },
         { "id": "claude-sonnet-4-20250514", "name": "Sonnet", "description": "Balanced performance" },
-        { "id": "claude-haiku-3-5-20241022", "name": "Haiku", "description": "Fast and efficient" }
+        { "id": "claude-haiku-4-5-20251001", "name": "Haiku", "description": "Fast and efficient" }
       ]
     },
     "codex": {
