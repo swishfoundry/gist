@@ -25,6 +25,7 @@
       "icon": "◈",
       "access": "private",
       "models": [
+        { "id": "gpt-5.3-codex", "name": "GPT-5.2 Codex", "description": "New agentic coding model" },
         { "id": "gpt-5.2-codex", "name": "GPT-5.2 Codex", "description": "Latest frontier agentic coding model", "isDefault": true },
         { "id": "gpt-5.1-codex-max", "name": "GPT-5.1 Codex Max", "description": "Maximum capability" },
         { "id": "gpt-5.1-codex-mini", "name": "GPT-5.1 Codex Mini", "description": "Fast and efficient" },
