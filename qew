@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "minCliVersion": "1.0.5",
+  "minCliVersion": "1.0.20",
   "minPlatformVersion": "1.11.0",
-  "latestCliVersion": "1.0.5",
+  "latestCliVersion": "1.0.22",
   "latestPlatformVersion": "1.11.0",
   "access": {
     "cli": "public",
@@ -15,7 +15,7 @@
       "access": "public",
       "models": [
         { "id": "claude-opus-4-6", "name": "Opus 4.6", "description": "Most extreme work" },
-        { "id": "claude-opus-4-5-20251101", "name": "Opus", "description": "Most capable model", "isDefault": true },
+        { "id": "claude-opus-4-5-20251101", "name": "Opus 4.5", "description": "Most capable model", "isDefault": true },
         { "id": "claude-sonnet-4-20250514", "name": "Sonnet", "description": "Balanced performance" },
         { "id": "claude-haiku-4-5-20251001", "name": "Haiku", "description": "Fast and efficient" }
       ]
