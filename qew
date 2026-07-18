@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "minCliVersion": "1.0.20",
   "minPlatformVersion": "1.11.0",
   "latestCliVersion": "1.0.22",
@@ -14,10 +14,11 @@
       "icon": "✦",
       "access": "public",
       "models": [
-        { "id": "claude-opus-4-6", "name": "Opus 4.6", "description": "Most extreme work" },
-        { "id": "claude-opus-4-5-20251101", "name": "Opus 4.5", "description": "Most capable model", "isDefault": true },
-        { "id": "claude-sonnet-4-20250514", "name": "Sonnet", "description": "Balanced performance" },
-        { "id": "claude-haiku-4-5-20251001", "name": "Haiku", "description": "Fast and efficient" }
+        { "id": "claude-opus-4-7", "name": "Opus 4.7", "description": "Latest frontier model", "isDefault": true },
+        { "id": "claude-opus-4-5-20251101", "name": "Opus 4.5", "description": "Previous flagship" },
+        { "id": "claude-sonnet-4-6", "name": "Sonnet 4.6", "description": "Balanced performance" },
+        { "id": "claude-sonnet-4-20250514", "name": "Sonnet 4", "description": "Reliable general-purpose" },
+        { "id": "claude-haiku-4-5-20251001", "name": "Haiku 4.5", "description": "Fast and efficient" }
       ]
     },
     "codex": {
@@ -25,8 +26,8 @@
       "icon": "◈",
       "access": "private",
       "models": [
-        { "id": "gpt-5.3-codex", "name": "GPT-5.3 Codex", "description": "New agentic coding model" },
-        { "id": "gpt-5.2-codex", "name": "GPT-5.2 Codex", "description": "Latest frontier agentic coding model", "isDefault": true },
+        { "id": "gpt-5.3-codex", "name": "GPT-5.3 Codex", "description": "Most capable agentic coding model", "isDefault": true },
+        { "id": "gpt-5.2-codex", "name": "GPT-5.2 Codex", "description": "Previous frontier coding model" },
         { "id": "gpt-5.1-codex-max", "name": "GPT-5.1 Codex Max", "description": "Maximum capability" },
         { "id": "gpt-5.1-codex-mini", "name": "GPT-5.1 Codex Mini", "description": "Fast and efficient" },
         { "id": "gpt-5.2", "name": "GPT-5.2", "description": "General purpose" }
@@ -37,9 +38,21 @@
       "icon": "◆",
       "access": "private",
       "models": [
-        { "id": "gemini-2.5-pro", "name": "Gemini 2.5 Pro", "description": "Most capable", "isDefault": true },
+        { "id": "gemini-3.1-pro-preview", "name": "Gemini 3.1 Pro", "description": "Advanced reasoning and agentic coding (preview)", "isDefault": true },
+        { "id": "gemini-2.5-pro", "name": "Gemini 2.5 Pro", "description": "Stable flagship model" },
         { "id": "gemini-2.0-flash", "name": "Gemini 2.0 Flash", "description": "Fast responses" },
         { "id": "gemini-2.0-flash-lite", "name": "Gemini 2.0 Flash Lite", "description": "Lightweight" }
+      ]
+    },
+    "moonshot": {
+      "name": "Moonshot",
+      "icon": "◉",
+      "access": "private",
+      "models": [
+        { "id": "kimi-k3", "name": "Kimi K3", "description": "Flagship 2.8T model with 1M context", "isDefault": true },
+        { "id": "kimi-k2.7-code", "name": "Kimi K2.7 Code", "description": "Specialized coding model" },
+        { "id": "kimi-k2.7-code-highspeed", "name": "Kimi K2.7 Code Highspeed", "description": "Fast coding responses" },
+        { "id": "kimi-k2.6", "name": "Kimi K2.6", "description": "General purpose" }
       ]
     }
   },
@@ -48,7 +61,7 @@
     "platform": []
   },
   "announcement": {
-    "enabled": true,
+    "enabled": false,
     "message": "Scheduled maintenance on Jan 25th at 2PM UTC",
     "type": "warning"
   },
