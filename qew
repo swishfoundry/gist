@@ -15,7 +15,8 @@
       "access": "public",
       "models": [
         { "id": "claude-fable-5", "name": "Fable 5", "description": "Next-gen intelligence for long-running agents" },
-        { "id": "claude-opus-4-8", "name": "Opus 4.8", "description": "Complex agentic coding and enterprise work", "isDefault": true },
+        { "id": "claude-opus-5", "name": "Opus 5", "description": "Complex agentic coding and enterprise work", "isDefault": true },
+        { "id": "claude-opus-4-8", "name": "Opus 4.8", "description": "Agentic coding and enterprise work" },
         { "id": "claude-opus-4-7", "name": "Opus 4.7", "description": "Previous frontier model" },
         { "id": "claude-sonnet-5", "name": "Sonnet 5", "description": "Best speed and intelligence balance" },
         { "id": "claude-sonnet-4-6", "name": "Sonnet 4.6", "description": "Balanced general-purpose" },
