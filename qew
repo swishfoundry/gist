@@ -36,7 +36,7 @@
     "codex": {
       "name": "Codex",
       "icon": "◈",
-      "access": "private",
+      "access": "public",
       "models": [
         { "id": "gpt-6-astra", "name": "GPT-6 Astra", "description": "Frontier computer use and software engineering", "isDefault": true },
         { "id": "gpt-5.6-sol", "name": "GPT-5.6 Sol", "description": "High capability" },
