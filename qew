@@ -1,9 +1,9 @@
 {
-  "schemaVersion": 4,
-  "minCliVersion": "1.0.20",
+  "schemaVersion": 2,
+  "minCliVersion": "1.0.5",
   "minPlatformVersion": "1.11.0",
-  "latestCliVersion": "1.0.23",
-  "latestPlatformVersion": "1.11.0",
+  "latestCliVersion": "1.0.5",
+  "latestPlatformVersion": "1.19.0",
   "access": {
     "cli": "public",
     "platform": "public"
@@ -14,13 +14,23 @@
       "icon": "✦",
       "access": "public",
       "models": [
-        { "id": "claude-fable-5", "name": "Fable 5", "description": "Next-gen intelligence for long-running agents" },
-        { "id": "claude-opus-5", "name": "Opus 5", "description": "Complex agentic coding and enterprise work", "isDefault": true },
-        { "id": "claude-opus-4-8", "name": "Opus 4.8", "description": "Agentic coding and enterprise work" },
-        { "id": "claude-opus-4-7", "name": "Opus 4.7", "description": "Previous frontier model" },
-        { "id": "claude-sonnet-5", "name": "Sonnet 5", "description": "Best speed and intelligence balance" },
-        { "id": "claude-sonnet-4-6", "name": "Sonnet 4.6", "description": "Balanced general-purpose" },
-        { "id": "claude-haiku-4-5", "name": "Haiku 4.5", "description": "Fastest with near-frontier intelligence" }
+        { "id": "claude-opus-5", "name": "Opus 5", "description": "Most capable model", "isDefault": true },
+        { "id": "claude-opus-5[1m]", "name": "Opus 5 (1M)", "description": "1M context window" },
+        { "id": "claude-fable-5-1", "name": "Fable 5.1", "description": "Deepest reasoning, premium pricing" },
+        { "id": "claude-sonnet-5", "name": "Sonnet 5", "description": "Balanced performance" },
+        { "id": "claude-haiku-4-5", "name": "Haiku 4.5", "description": "Fast and efficient" },
+        { "id": "claude-fable-5", "name": "Fable 5", "description": "Previous generation Fable" },
+        { "id": "claude-opus-4-8", "name": "Opus 4.8", "description": "Previous generation Opus" },
+        { "id": "claude-opus-4-8[1m]", "name": "Opus 4.8 (1M)", "description": "1M context window" },
+        { "id": "claude-opus-4-7", "name": "Opus 4.7", "description": "Legacy Opus" },
+        { "id": "claude-opus-4-7[1m]", "name": "Opus 4.7 (1M)", "description": "1M context window" },
+        { "id": "claude-opus-4-6", "name": "Opus 4.6", "description": "Legacy Opus" },
+        { "id": "claude-opus-4-6[1m]", "name": "Opus 4.6 (1M)", "description": "1M context window" },
+        { "id": "claude-opus-4-5", "name": "Opus 4.5", "description": "Legacy Opus" },
+        { "id": "claude-sonnet-4-6", "name": "Sonnet 4.6", "description": "Previous generation Sonnet" },
+        { "id": "claude-sonnet-4-6[1m]", "name": "Sonnet 4.6 (1M)", "description": "1M context window" },
+        { "id": "claude-sonnet-4-5", "name": "Sonnet 4.5", "description": "Legacy Sonnet" },
+        { "id": "claude-sonnet-4-5-20250929[1m]", "name": "Sonnet 4.5 (1M)", "description": "1M context window" }
       ]
     },
     "codex": {
@@ -28,13 +38,16 @@
       "icon": "◈",
       "access": "private",
       "models": [
-        { "id": "gpt-5.6-sol", "name": "GPT-5.6 Sol", "description": "Flagship for complex coding and research", "isDefault": true },
-        { "id": "gpt-5.6-terra", "name": "GPT-5.6 Terra", "description": "Balanced everyday workhorse" },
-        { "id": "gpt-5.6-luna", "name": "GPT-5.6 Luna", "description": "Fast and cost-effective" },
-        { "id": "gpt-5.5", "name": "GPT-5.5", "description": "Previous frontier model" },
-        { "id": "gpt-5.4", "name": "GPT-5.4", "description": "Professional-grade" },
-        { "id": "gpt-5.4-mini", "name": "GPT-5.4 Mini", "description": "Lightweight variant" },
-        { "id": "gpt-5.3-codex", "name": "GPT-5.3 Codex", "description": "Specialized agentic coding" }
+        { "id": "gpt-6-astra", "name": "GPT-6 Astra", "description": "Frontier computer use and software engineering", "isDefault": true },
+        { "id": "gpt-5.6-sol", "name": "GPT-5.6 Sol", "description": "High capability" },
+        { "id": "gpt-5.6-terra", "name": "GPT-5.6 Terra", "description": "Balanced" },
+        { "id": "gpt-5.6-luna", "name": "GPT-5.6 Luna", "description": "Fast and affordable" },
+        { "id": "gpt-5.2-codex", "name": "GPT-5.2 Codex", "description": "Previous agentic coding model" },
+        { "id": "gpt-5.2", "name": "GPT-5.2", "description": "General purpose" },
+        { "id": "gpt-5.1-codex-max", "name": "GPT-5.1 Codex Max", "description": "Maximum capability" },
+        { "id": "gpt-5.1-codex", "name": "GPT-5.1 Codex", "description": "Previous agentic coding model" },
+        { "id": "gpt-5.1-codex-mini", "name": "GPT-5.1 Codex Mini", "description": "Fast and efficient" },
+        { "id": "gpt-5.1", "name": "GPT-5.1", "description": "General purpose" }
       ]
     },
     "gemini": {
@@ -42,23 +55,50 @@
       "icon": "◆",
       "access": "private",
       "models": [
-        { "id": "gemini-3.5-flash", "name": "Gemini 3.5 Flash", "description": "Current stable flagship for agentic and coding tasks", "isDefault": true },
-        { "id": "gemini-flash-latest", "name": "Gemini Flash (Latest)", "description": "Always tracks the latest Flash release" },
-        { "id": "gemini-3.1-pro-preview", "name": "Gemini 3.1 Pro", "description": "Advanced reasoning (preview)" },
-        { "id": "gemini-2.5-pro", "name": "Gemini 2.5 Pro", "description": "Stable Pro-tier reasoning" },
-        { "id": "gemini-2.0-flash", "name": "Gemini 2.0 Flash", "description": "Fast responses" },
-        { "id": "gemini-2.0-flash-lite", "name": "Gemini 2.0 Flash Lite", "description": "Lightweight" }
+        { "id": "gemini-2.5-pro", "name": "Gemini 2.5 Pro", "description": "Most capable stable", "isDefault": true },
+        { "id": "gemini-3.1-pro-preview", "name": "Gemini 3.1 Pro", "description": "Flagship reasoning, preview" },
+        { "id": "gemini-3.8-flash", "name": "Gemini 3.8 Flash", "description": "Latest fast model" },
+        { "id": "gemini-3.7-flash", "name": "Gemini 3.7 Flash", "description": "Fast responses" },
+        { "id": "gemini-3.5-flash", "name": "Gemini 3.5 Flash", "description": "Fast responses" },
+        { "id": "gemini-3.5-flash-lite", "name": "Gemini 3.5 Flash Lite", "description": "Lightweight" },
+        { "id": "gemini-3.1-flash-lite", "name": "Gemini 3.1 Flash Lite", "description": "Lightweight" },
+        { "id": "gemini-2.5-flash", "name": "Gemini 2.5 Flash", "description": "Legacy fast" },
+        { "id": "gemini-2.5-flash-lite", "name": "Gemini 2.5 Flash Lite", "description": "Legacy lightweight" },
+        { "id": "gemini-2.0-flash", "name": "Gemini 2.0 Flash", "description": "Legacy fast" },
+        { "id": "gemini-2.0-flash-lite", "name": "Gemini 2.0 Flash Lite", "description": "Legacy lightweight" }
       ]
     },
     "moonshot": {
-      "name": "Moonshot",
+      "name": "Kimi",
       "icon": "◉",
       "access": "private",
       "models": [
-        { "id": "kimi-k3", "name": "Kimi K3", "description": "Flagship 2.8T model with 1M context", "isDefault": true },
-        { "id": "kimi-k2.7-code", "name": "Kimi K2.7 Code", "description": "Specialized coding model" },
-        { "id": "kimi-k2.7-code-highspeed", "name": "Kimi K2.7 Code Highspeed", "description": "Fast coding responses" },
-        { "id": "kimi-k2.6", "name": "Kimi K2.6", "description": "General purpose" }
+        { "id": "kimi-k2-thinking", "name": "Kimi K2 Thinking", "description": "Deep reasoning agentic model", "isDefault": true },
+        { "id": "kimi-k2-0905-preview", "name": "Kimi K2 0905", "description": "Agentic coding model" },
+        { "id": "kimi-k2-turbo-preview", "name": "Kimi K2 Turbo", "description": "High-speed K2" },
+        { "id": "kimi-k2-0711-preview", "name": "Kimi K2 0711", "description": "Earlier K2 release" },
+        { "id": "kimi-latest", "name": "Kimi Latest", "description": "Tracks the current Kimi chat model" },
+        { "id": "kimi-thinking-preview", "name": "Kimi Thinking", "description": "Multimodal reasoning preview" },
+        { "id": "moonshot-v1-auto", "name": "Moonshot v1 Auto", "description": "Auto-selects context length" },
+        { "id": "moonshot-v1-128k", "name": "Moonshot v1 128K", "description": "Long context" },
+        { "id": "moonshot-v1-32k", "name": "Moonshot v1 32K", "description": "Medium context" },
+        { "id": "moonshot-v1-8k", "name": "Moonshot v1 8K", "description": "Short context" }
+      ]
+    },
+    "qwen": {
+      "name": "Qwen",
+      "icon": "◇",
+      "access": "private",
+      "models": [
+        { "id": "qwen3-coder-plus", "name": "Qwen3 Coder Plus", "description": "Agentic coding model", "isDefault": true },
+        { "id": "qwen3-coder-flash", "name": "Qwen3 Coder Flash", "description": "Fast agentic coding" },
+        { "id": "qwen3-coder-480b-a35b-instruct", "name": "Qwen3 Coder 480B", "description": "Largest open coder weights" },
+        { "id": "qwen3-coder-30b-a3b-instruct", "name": "Qwen3 Coder 30B", "description": "Open coder weights, runs locally" },
+        { "id": "qwen3-max", "name": "Qwen3 Max", "description": "Most capable general model" },
+        { "id": "qwen3-235b-a22b-instruct", "name": "Qwen3 235B", "description": "Open flagship instruct" },
+        { "id": "qwen-plus", "name": "Qwen Plus", "description": "Balanced general purpose" },
+        { "id": "qwen-turbo", "name": "Qwen Turbo", "description": "Long context, low cost" },
+        { "id": "qwen-max", "name": "Qwen Max", "description": "Previous generation flagship" }
       ]
     }
   },
@@ -67,7 +107,7 @@
     "platform": []
   },
   "announcement": {
-    "enabled": false,
+    "enabled": true,
     "message": "Scheduled maintenance on Jan 25th at 2PM UTC",
     "type": "warning"
   },
